@@ -24,7 +24,7 @@ const firebaseConfig = {
       purpose: "adding room"
     });
     localStorage.setItem("room_name", room_input);
-    window.location = "chat_page.html";
+    window.location = "chatterbox/chat_page.html";
   }
   function getData() {firebase.database().ref("/").on('value',
   function(snapshot) {document.getElementById("output").innerHTML =
