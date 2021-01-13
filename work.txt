@@ -1,0 +1,4 @@
+<div id="log" style="text-align: right; font-size: 40px; background-color: red;">
+    Logout&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="icons8-sign-out-64.png" class="logout" style="display: inline;" onclick="logout()">
+</div>

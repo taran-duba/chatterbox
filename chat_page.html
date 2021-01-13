@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chat Room</title>
+        <link rel="stylesheet" href="chat_page.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+	    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+        <script src="chat_page.js"></script>
+    </head>
+    <button id="logout" onclick="logout()" class="glyphicon glyphicon-log-out btn btn-danger" style="float: right; font-size: 20px;">Logout</button>
+    <br><br>
+    <body onload="document.getElementById('room_name').innerHTML = localStorage.getItem('room_name')">
+        <h1 id="room_name" style="text-align: center; color: white;"></h1>
+        <div id="output" style="text-align: left;margin-bottom: 70px;"></div>
+        <div class="input_div_message_page" style="text-align: center;">
+            <label>Send:</label>
+		    <input type="text" id="msg" class="form-control" placeholder="Message">
+		    <button onclick="send()"class="btn btn-success">Send</button>
+        </div>
+    </body>
+</html>

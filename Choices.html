@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Room Choices</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+        <link rel="stylesheet" href="Choices.css">
+        <script src="choices.js"></script>
+    </head>
+    <body onload="printName()">
+        <button id="logout" onclick="logout()" class="glyphicon glyphicon-log-out btn btn-danger">Logout</button>
+        <br><br>
+        <h1 id="header">Chatterbox Chat</h1>
+        <br>
+        <br>
+        <br>
+        <div id="center">
+            <h1>Welcome, </h1> <span id="name"></span>
+            <br>
+            <br>
+            <input type="text" id="room_input" class="form-control" placeholder="Room Name" required>
+            <br><br>
+            <button id="submit_room" class="btn btn-success" onclick="addRoom()">Create Group/Room</button>
+        </div>
+        <div id="rooms"></div>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+.logout {
+    right: 0px;
+    position: absolute;
+}
+#log-text {
+    font-size: xx-large;
+    text-align: right;
+
+}
+#center {
+    text-align: center;
+}
+#name {
+    font-size: xx-large;
+    font-weight: bold;
+}
+#header {
+    text-align: center;
+    color: blueviolet;
+}
+body {
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+#room_input {
+    width: 50%;
+    margin: auto;
+}
+h1, #name {
+    color: orangered;
+}
+#logout {
+    float: right;
+    font-size: 20px;
+}
